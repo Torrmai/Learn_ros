@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/install
+
+Name: hello_py
+Description: Description of hello_py
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ton/catkin_ws/install/lib 
+Requires: 

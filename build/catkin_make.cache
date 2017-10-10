@@ -1,0 +1,2 @@
+hello_py:plus_minus:plus_minus_msg:test_create_msg
+-DCATKIN_DEVEL_PREFIX=/home/ton/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ton/catkin_ws/install -G Unix Makefiles
