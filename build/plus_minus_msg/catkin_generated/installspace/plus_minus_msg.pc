@@ -3,6 +3,6 @@ prefix=/home/ton/catkin_ws/install
 Name: plus_minus_msg
 Description: Description of plus_minus_msg
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/ton/catkin_ws/install/include
 Libs: -L/home/ton/catkin_ws/install/lib 
 Requires: 

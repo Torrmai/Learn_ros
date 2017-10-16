@@ -121,6 +121,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ton/catkin_ws/build/plus_minus/cmake_install.cmake")
   include("/home/ton/catkin_ws/build/plus_minus_msg/cmake_install.cmake")
   include("/home/ton/catkin_ws/build/test_create_msg/cmake_install.cmake")
+  include("/home/ton/catkin_ws/build/test_publisher_subscriber/cmake_install.cmake")
 
 endif()
 
