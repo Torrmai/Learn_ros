@@ -1,0 +1,8 @@
+int16 requestNO
+std_msgs/String request
+	string data
+---
+
+int16 responseNO
+std_msgs/String response
+	string data

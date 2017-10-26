@@ -1,0 +1,42 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~save" : \b [bool] save min: False, default: False, max: True
+- \b "~KP_X_P" : \b [double] KP_X_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KP_X_I" : \b [double] KP_X_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KP_X_D" : \b [double] KP_X_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KP_Y_P" : \b [double] KP_Y_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KP_Y_I" : \b [double] KP_Y_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KP_Y_D" : \b [double] KP_Y_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KP_Z_P" : \b [double] KP_Z_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KP_Z_I" : \b [double] KP_Z_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KP_Z_D" : \b [double] KP_Z_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KP_r_P" : \b [double] KP_r_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KP_r_I" : \b [double] KP_r_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KP_r_D" : \b [double] KP_r_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KP_p_P" : \b [double] KP_p_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KP_p_I" : \b [double] KP_p_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KP_p_D" : \b [double] KP_p_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KP_y_P" : \b [double] KP_y_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KP_y_I" : \b [double] KP_y_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KP_y_D" : \b [double] KP_y_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KV_X_P" : \b [double] KV_X_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KV_X_I" : \b [double] KV_X_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KV_X_D" : \b [double] KV_X_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KV_Y_P" : \b [double] KV_Y_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KV_Y_I" : \b [double] KV_Y_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KV_Y_D" : \b [double] KV_Y_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KV_Z_P" : \b [double] KV_Z_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KV_Z_I" : \b [double] KV_Z_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KV_Z_D" : \b [double] KV_Z_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KV_r_P" : \b [double] KV_r_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KV_r_I" : \b [double] KV_r_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KV_r_D" : \b [double] KV_r_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KV_p_P" : \b [double] KV_p_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KV_p_I" : \b [double] KV_p_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KV_p_D" : \b [double] KV_p_D min: 0.0, default: 0.0, max: 10.0
+- \b "~KV_y_P" : \b [double] KV_y_P min: 0.0, default: 0.0, max: 50.0
+- \b "~KV_y_I" : \b [double] KV_y_I min: 0.0, default: 0.0, max: 1.0
+- \b "~KV_y_D" : \b [double] KV_y_D min: 0.0, default: 0.0, max: 10.0
+

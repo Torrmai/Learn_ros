@@ -7,15 +7,16 @@ import struct
 
 
 class what_input(genpy.Message):
-  _md5sum = "f8ac08cd95c64326d8f6b9dae5d070dd"
+  _md5sum = "f2076654e2eb2259bf9ab3a7dff817cd"
   _type = "plus_minus_msg/what_input"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """string comand
 int16 inp1
 int16 inp2
+int16 result
 """
-  __slots__ = ['comand','inp1','inp2']
-  _slot_types = ['string','int16','int16']
+  __slots__ = ['comand','inp1','inp2','result']
+  _slot_types = ['string','int16','int16','int16']
 
   def __init__(self, *args, **kwds):
     """
@@ -25,7 +26,7 @@ int16 inp2
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       comand,inp1,inp2
+       comand,inp1,inp2,result
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -40,10 +41,13 @@ int16 inp2
         self.inp1 = 0
       if self.inp2 is None:
         self.inp2 = 0
+      if self.result is None:
+        self.result = 0
     else:
       self.comand = ''
       self.inp1 = 0
       self.inp2 = 0
+      self.result = 0
 
   def _get_types(self):
     """
@@ -64,7 +68,7 @@ int16 inp2
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_get_struct_2h().pack(_x.inp1, _x.inp2))
+      buff.write(_get_struct_3h().pack(_x.inp1, _x.inp2, _x.result))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -86,8 +90,8 @@ int16 inp2
         self.comand = str[start:end]
       _x = self
       start = end
-      end += 4
-      (_x.inp1, _x.inp2,) = _get_struct_2h().unpack(str[start:end])
+      end += 6
+      (_x.inp1, _x.inp2, _x.result,) = _get_struct_3h().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -107,7 +111,7 @@ int16 inp2
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_get_struct_2h().pack(_x.inp1, _x.inp2))
+      buff.write(_get_struct_3h().pack(_x.inp1, _x.inp2, _x.result))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -130,8 +134,8 @@ int16 inp2
         self.comand = str[start:end]
       _x = self
       start = end
-      end += 4
-      (_x.inp1, _x.inp2,) = _get_struct_2h().unpack(str[start:end])
+      end += 6
+      (_x.inp1, _x.inp2, _x.result,) = _get_struct_3h().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -140,9 +144,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_2h = None
-def _get_struct_2h():
-    global _struct_2h
-    if _struct_2h is None:
-        _struct_2h = struct.Struct("<2h")
-    return _struct_2h
+_struct_3h = None
+def _get_struct_3h():
+    global _struct_3h
+    if _struct_3h is None:
+        _struct_3h = struct.Struct("<3h")
+    return _struct_3h

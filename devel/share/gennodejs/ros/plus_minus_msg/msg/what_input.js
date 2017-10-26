@@ -21,6 +21,7 @@ class what_input {
       this.comand = null;
       this.inp1 = null;
       this.inp2 = null;
+      this.result = null;
     }
     else {
       if (initObj.hasOwnProperty('comand')) {
@@ -41,6 +42,12 @@ class what_input {
       else {
         this.inp2 = 0;
       }
+      if (initObj.hasOwnProperty('result')) {
+        this.result = initObj.result
+      }
+      else {
+        this.result = 0;
+      }
     }
   }
 
@@ -52,6 +59,8 @@ class what_input {
     bufferOffset = _serializer.int16(obj.inp1, buffer, bufferOffset);
     // Serialize message field [inp2]
     bufferOffset = _serializer.int16(obj.inp2, buffer, bufferOffset);
+    // Serialize message field [result]
+    bufferOffset = _serializer.int16(obj.result, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -65,13 +74,15 @@ class what_input {
     data.inp1 = _deserializer.int16(buffer, bufferOffset);
     // Deserialize message field [inp2]
     data.inp2 = _deserializer.int16(buffer, bufferOffset);
+    // Deserialize message field [result]
+    data.result = _deserializer.int16(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
     let length = 0;
     length += object.comand.length;
-    return length + 8;
+    return length + 10;
   }
 
   static datatype() {
@@ -81,7 +92,7 @@ class what_input {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'f8ac08cd95c64326d8f6b9dae5d070dd';
+    return 'f2076654e2eb2259bf9ab3a7dff817cd';
   }
 
   static messageDefinition() {
@@ -90,6 +101,7 @@ class what_input {
     string comand
     int16 inp1
     int16 inp2
+    int16 result
     
     `;
   }
@@ -119,6 +131,13 @@ class what_input {
     }
     else {
       resolved.inp2 = 0
+    }
+
+    if (msg.result !== undefined) {
+      resolved.result = msg.result;
+    }
+    else {
+      resolved.result = 0
     }
 
     return resolved;

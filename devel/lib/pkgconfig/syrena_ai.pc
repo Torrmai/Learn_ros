@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/devel
+
+Name: syrena_ai
+Description: Description of syrena_ai
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ton/catkin_ws/devel/lib 
+Requires: 

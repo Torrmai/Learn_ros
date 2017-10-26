@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="test_ser_cli" name="S(arg nodename)" type="S(arg nodename).py" output= "screen"/>
+</launch>

@@ -5,4 +5,6 @@
           INP1
           INP2-VAL
           INP2
+          RESULT-VAL
+          RESULT
 ))

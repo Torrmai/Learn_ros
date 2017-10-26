@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/devel
+
+Name: syrena_gazebo_plugins
+Description: Description of syrena_gazebo_plugins
+Version: 0.0.0
+Cflags: -I/home/ton/catkin_ws/src/src_sim/auv_simulator/syrena_gazebo_plugins/include
+Libs: -L/home/ton/catkin_ws/devel/lib 
+Requires: roscpp std_msgs geometry_msgs nav_msgs tf message_runtime hector_gazebo_plugins

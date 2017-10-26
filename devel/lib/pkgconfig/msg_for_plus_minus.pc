@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/devel
+
+Name: msg_for_plus_minus
+Description: Description of msg_for_plus_minus
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ton/catkin_ws/devel/lib 
+Requires: 

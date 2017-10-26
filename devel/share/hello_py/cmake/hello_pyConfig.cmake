@@ -67,7 +67,7 @@ set(hello_py_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(hello_py_SOURCE_PREFIX /home/ton/catkin_ws/src/hello_py)
+  set(hello_py_SOURCE_PREFIX /home/ton/catkin_ws/src/src_code/hello_py)
   set(hello_py_DEVEL_PREFIX /home/ton/catkin_ws/devel)
   set(hello_py_INSTALL_PREFIX "")
   set(hello_py_PREFIX ${hello_py_DEVEL_PREFIX})
@@ -103,7 +103,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'hello_py' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'ton <ton@todo.todo>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'hello_py' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ton/catkin_ws/src/hello_py/${idir}'.  Ask the maintainer 'ton <ton@todo.todo>' to fix it.")
+      message(FATAL_ERROR "Project 'hello_py' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ton/catkin_ws/src/src_code/hello_py/${idir}'.  Ask the maintainer 'ton <ton@todo.todo>' to fix it.")
     endif()
     _list_append_unique(hello_py_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ton/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ton/catkin_ws/devel/lib;/home/ton/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

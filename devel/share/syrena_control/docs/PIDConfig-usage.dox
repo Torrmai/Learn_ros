@@ -1,0 +1,43 @@
+\subsubsection usage Usage
+\verbatim
+<node name="syrena_control" pkg="syrena_control" type="syrena_control">
+  <param name="save" type="bool" value="False" />
+  <param name="KP_X_P" type="double" value="0.0" />
+  <param name="KP_X_I" type="double" value="0.0" />
+  <param name="KP_X_D" type="double" value="0.0" />
+  <param name="KP_Y_P" type="double" value="0.0" />
+  <param name="KP_Y_I" type="double" value="0.0" />
+  <param name="KP_Y_D" type="double" value="0.0" />
+  <param name="KP_Z_P" type="double" value="0.0" />
+  <param name="KP_Z_I" type="double" value="0.0" />
+  <param name="KP_Z_D" type="double" value="0.0" />
+  <param name="KP_r_P" type="double" value="0.0" />
+  <param name="KP_r_I" type="double" value="0.0" />
+  <param name="KP_r_D" type="double" value="0.0" />
+  <param name="KP_p_P" type="double" value="0.0" />
+  <param name="KP_p_I" type="double" value="0.0" />
+  <param name="KP_p_D" type="double" value="0.0" />
+  <param name="KP_y_P" type="double" value="0.0" />
+  <param name="KP_y_I" type="double" value="0.0" />
+  <param name="KP_y_D" type="double" value="0.0" />
+  <param name="KV_X_P" type="double" value="0.0" />
+  <param name="KV_X_I" type="double" value="0.0" />
+  <param name="KV_X_D" type="double" value="0.0" />
+  <param name="KV_Y_P" type="double" value="0.0" />
+  <param name="KV_Y_I" type="double" value="0.0" />
+  <param name="KV_Y_D" type="double" value="0.0" />
+  <param name="KV_Z_P" type="double" value="0.0" />
+  <param name="KV_Z_I" type="double" value="0.0" />
+  <param name="KV_Z_D" type="double" value="0.0" />
+  <param name="KV_r_P" type="double" value="0.0" />
+  <param name="KV_r_I" type="double" value="0.0" />
+  <param name="KV_r_D" type="double" value="0.0" />
+  <param name="KV_p_P" type="double" value="0.0" />
+  <param name="KV_p_I" type="double" value="0.0" />
+  <param name="KV_p_D" type="double" value="0.0" />
+  <param name="KV_y_P" type="double" value="0.0" />
+  <param name="KV_y_I" type="double" value="0.0" />
+  <param name="KV_y_D" type="double" value="0.0" />
+</node>
+\endverbatim
+

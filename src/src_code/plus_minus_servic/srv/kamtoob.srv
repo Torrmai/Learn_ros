@@ -1,0 +1,5 @@
+string com
+int16 inp1
+int16 inp2
+---
+plus_minus_msg/what_input response

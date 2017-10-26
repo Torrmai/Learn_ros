@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/install
+
+Name: syrena_gazebo
+Description: Description of syrena_gazebo
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/ton/catkin_ws/install/lib -lsyrena_gazebo
+Requires: roscpp sensor_msgs nav_msgs robot_localization move_base

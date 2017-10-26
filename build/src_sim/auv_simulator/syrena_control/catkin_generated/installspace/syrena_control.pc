@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/install
+
+Name: syrena_control
+Description: Description of syrena_control
+Version: 1.0.0
+Cflags: -I/home/ton/catkin_ws/install/include
+Libs: -L/home/ton/catkin_ws/install/lib 
+Requires: 

@@ -67,7 +67,7 @@ set(test_publisher_subscriber_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(test_publisher_subscriber_SOURCE_PREFIX /home/ton/catkin_ws/src/test_publisher_subscriber)
+  set(test_publisher_subscriber_SOURCE_PREFIX /home/ton/catkin_ws/src/src_code/test_publisher_subscriber)
   set(test_publisher_subscriber_DEVEL_PREFIX /home/ton/catkin_ws/devel)
   set(test_publisher_subscriber_INSTALL_PREFIX "")
   set(test_publisher_subscriber_PREFIX ${test_publisher_subscriber_DEVEL_PREFIX})
@@ -103,7 +103,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'test_publisher_subscriber' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'ton <ton@todo.todo>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'test_publisher_subscriber' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ton/catkin_ws/src/test_publisher_subscriber/${idir}'.  Ask the maintainer 'ton <ton@todo.todo>' to fix it.")
+      message(FATAL_ERROR "Project 'test_publisher_subscriber' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/ton/catkin_ws/src/src_code/test_publisher_subscriber/${idir}'.  Ask the maintainer 'ton <ton@todo.todo>' to fix it.")
     endif()
     _list_append_unique(test_publisher_subscriber_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ton/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/ton/catkin_ws/devel/lib;/home/ton/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

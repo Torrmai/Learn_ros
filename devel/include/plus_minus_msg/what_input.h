@@ -26,12 +26,14 @@ struct what_input_
   what_input_()
     : comand()
     , inp1(0)
-    , inp2(0)  {
+    , inp2(0)
+    , result(0)  {
     }
   what_input_(const ContainerAllocator& _alloc)
     : comand(_alloc)
     , inp1(0)
-    , inp2(0)  {
+    , inp2(0)
+    , result(0)  {
   (void)_alloc;
     }
 
@@ -45,6 +47,9 @@ struct what_input_
 
    typedef int16_t _inp2_type;
   _inp2_type inp2;
+
+   typedef int16_t _result_type;
+  _result_type result;
 
 
 
@@ -80,7 +85,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'plus_minus_msg': ['/home/ton/catkin_ws/src/plus_minus_msg/msg', '/home/ton/catkin_ws/src/plus_minus_msg/msg']}
+// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'plus_minus_msg': ['/home/ton/catkin_ws/src/src_code/plus_minus_msg/msg', '/home/ton/catkin_ws/src/src_code/plus_minus_msg/msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -123,12 +128,12 @@ struct MD5Sum< ::plus_minus_msg::what_input_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "f8ac08cd95c64326d8f6b9dae5d070dd";
+    return "f2076654e2eb2259bf9ab3a7dff817cd";
   }
 
   static const char* value(const ::plus_minus_msg::what_input_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xf8ac08cd95c64326ULL;
-  static const uint64_t static_value2 = 0xd8f6b9dae5d070ddULL;
+  static const uint64_t static_value1 = 0xf2076654e2eb2259ULL;
+  static const uint64_t static_value2 = 0xbf9ab3a7dff817cdULL;
 };
 
 template<class ContainerAllocator>
@@ -150,6 +155,7 @@ struct Definition< ::plus_minus_msg::what_input_<ContainerAllocator> >
     return "string comand\n\
 int16 inp1\n\
 int16 inp2\n\
+int16 result\n\
 ";
   }
 
@@ -171,6 +177,7 @@ namespace serialization
       stream.next(m.comand);
       stream.next(m.inp1);
       stream.next(m.inp2);
+      stream.next(m.result);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -195,6 +202,8 @@ struct Printer< ::plus_minus_msg::what_input_<ContainerAllocator> >
     Printer<int16_t>::stream(s, indent + "  ", v.inp1);
     s << indent << "inp2: ";
     Printer<int16_t>::stream(s, indent + "  ", v.inp2);
+    s << indent << "result: ";
+    Printer<int16_t>::stream(s, indent + "  ", v.result);
   }
 };
 

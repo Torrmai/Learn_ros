@@ -1,0 +1,2 @@
+set(plus_minus_client_MESSAGE_FILES "")
+set(plus_minus_client_SERVICE_FILES "srv/kamtoob.srv")

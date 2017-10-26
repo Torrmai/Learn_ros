@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/devel
+
+Name: s_c_plusminus
+Description: Description of s_c_plusminus
+Version: 0.0.0
+Cflags: -I/home/ton/catkin_ws/devel/include
+Libs: -L/home/ton/catkin_ws/devel/lib 
+Requires: 

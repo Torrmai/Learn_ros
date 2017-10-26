@@ -1,0 +1,2 @@
+set(msg_for_plus_minus_MESSAGE_FILES "/home/ton/catkin_ws/src/src_code/msg_for_plus_minus/msg/kamtoob.msg")
+set(msg_for_plus_minus_SERVICE_FILES "")
