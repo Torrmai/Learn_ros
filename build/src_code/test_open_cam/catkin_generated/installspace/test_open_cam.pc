@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/install
+
+Name: test_open_cam
+Description: Description of test_open_cam
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ton/catkin_ws/install/lib 
+Requires: 
