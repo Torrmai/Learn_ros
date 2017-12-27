@@ -10,4 +10,7 @@ set(syrena_gazebo_plugins_EXEC_DEPENDS "roscpp" "gazebo" "gazebo_ros" "std_msgs"
 set(syrena_gazebo_plugins_RUN_DEPENDS "roscpp" "gazebo" "gazebo_ros" "std_msgs" "std_srvs" "geometry_msgs" "nav_msgs" "tf" "dynamic_reconfigure" "message_runtime" "hector_gazebo_plugins" "gazebo_msgs" "libgazebo7-dev" "sensor_msgs" "trajectory_msgs" "rospy" "nodelet" "angles" "urdf" "tf2_ros" "rosgraph_msgs" "image_transport" "rosconsole" "message_generation" "cv_bridge" "polled_camera" "camera_info_manager" "pcl_conversions" "pcl_ros" "libpcl-all")
 set(syrena_gazebo_plugins_TEST_DEPENDS )
 set(syrena_gazebo_plugins_DOC_DEPENDS )
+set(syrena_gazebo_plugins_URL_WEBSITE "")
+set(syrena_gazebo_plugins_URL_BUGTRACKER "")
+set(syrena_gazebo_plugins_URL_REPOSITORY "")
 set(syrena_gazebo_plugins_DEPRECATED "")

@@ -54,6 +54,8 @@ src_sim/freefloating_gazebo/CMakeFiles/freefloating_gazebo_control.dir/src/freef
  /opt/ros/kinetic/include/ros/single_subscriber_publisher.h
  /opt/ros/kinetic/include/ros/spinner.h
  /opt/ros/kinetic/include/ros/static_assert.h
+ /opt/ros/kinetic/include/ros/steady_timer.h
+ /opt/ros/kinetic/include/ros/steady_timer_options.h
  /opt/ros/kinetic/include/ros/subscribe_options.h
  /opt/ros/kinetic/include/ros/subscriber.h
  /opt/ros/kinetic/include/ros/subscription_callback_helper.h

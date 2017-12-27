@@ -46,6 +46,8 @@ src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: 
 src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: /opt/ros/kinetic/include/ros/single_subscriber_publisher.h
 src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: /opt/ros/kinetic/include/ros/spinner.h
 src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: /opt/ros/kinetic/include/ros/static_assert.h
+src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: /opt/ros/kinetic/include/ros/steady_timer.h
+src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: /opt/ros/kinetic/include/ros/steady_timer_options.h
 src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: /opt/ros/kinetic/include/ros/subscribe_options.h
 src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: /opt/ros/kinetic/include/ros/subscriber.h
 src_code/ueye_cam-master/CMakeFiles/ueye_wrapper.dir/src/ueye_cam_driver.cpp.o: /opt/ros/kinetic/include/ros/subscription_callback_helper.h

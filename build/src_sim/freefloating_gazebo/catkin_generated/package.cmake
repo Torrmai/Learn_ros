@@ -10,4 +10,7 @@ set(freefloating_gazebo_EXEC_DEPENDS "message_runtime" "cmake_modules" "urdf" "g
 set(freefloating_gazebo_RUN_DEPENDS "message_runtime" "cmake_modules" "urdf" "gazebo_ros" "control_toolbox" "rostime" "roscpp" "std_msgs" "std_srvs" "gazebo_msgs" "geometry_msgs" "sensor_msgs" "nav_msgs" "eigen")
 set(freefloating_gazebo_TEST_DEPENDS )
 set(freefloating_gazebo_DOC_DEPENDS )
+set(freefloating_gazebo_URL_WEBSITE "https://github.com/freefloating-gazebo/freefloating_gazebo")
+set(freefloating_gazebo_URL_BUGTRACKER "")
+set(freefloating_gazebo_URL_REPOSITORY "")
 set(freefloating_gazebo_DEPRECATED "")

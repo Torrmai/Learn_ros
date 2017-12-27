@@ -42,6 +42,8 @@ src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o:
 src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o: /opt/ros/kinetic/include/ros/single_subscriber_publisher.h
 src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o: /opt/ros/kinetic/include/ros/spinner.h
 src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o: /opt/ros/kinetic/include/ros/static_assert.h
+src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o: /opt/ros/kinetic/include/ros/steady_timer.h
+src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o: /opt/ros/kinetic/include/ros/steady_timer_options.h
 src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o: /opt/ros/kinetic/include/ros/subscribe_options.h
 src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o: /opt/ros/kinetic/include/ros/subscriber.h
 src_code/ueye_cam-master/CMakeFiles/check_ueye_api.dir/src/check_ueye_api.cpp.o: /opt/ros/kinetic/include/ros/subscription_callback_helper.h

@@ -10,4 +10,7 @@ set(syrena_ai_EXEC_DEPENDS "geometry_msgs" "laser_geometry" "numpy" "rospy" "sci
 set(syrena_ai_RUN_DEPENDS "geometry_msgs" "laser_geometry" "numpy" "rospy" "scipy" "sensor_msgs")
 set(syrena_ai_TEST_DEPENDS )
 set(syrena_ai_DOC_DEPENDS )
+set(syrena_ai_URL_WEBSITE "")
+set(syrena_ai_URL_BUGTRACKER "")
+set(syrena_ai_URL_REPOSITORY "")
 set(syrena_ai_DEPRECATED "")

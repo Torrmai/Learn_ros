@@ -10,4 +10,7 @@ set(syrena_control_EXEC_DEPENDS "roscpp" "rospy" "std_msgs" "geometry_msgs" "nav
 set(syrena_control_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "geometry_msgs" "nav_msgs" "dynamic_reconfigure" "syrena_teleop")
 set(syrena_control_TEST_DEPENDS )
 set(syrena_control_DOC_DEPENDS )
+set(syrena_control_URL_WEBSITE "")
+set(syrena_control_URL_BUGTRACKER "")
+set(syrena_control_URL_REPOSITORY "")
 set(syrena_control_DEPRECATED "")

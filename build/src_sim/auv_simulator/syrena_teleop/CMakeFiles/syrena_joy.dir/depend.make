@@ -45,6 +45,8 @@ src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp
 src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp.o: /opt/ros/kinetic/include/ros/single_subscriber_publisher.h
 src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp.o: /opt/ros/kinetic/include/ros/spinner.h
 src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp.o: /opt/ros/kinetic/include/ros/static_assert.h
+src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp.o: /opt/ros/kinetic/include/ros/steady_timer.h
+src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp.o: /opt/ros/kinetic/include/ros/steady_timer_options.h
 src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp.o: /opt/ros/kinetic/include/ros/subscribe_options.h
 src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp.o: /opt/ros/kinetic/include/ros/subscriber.h
 src_sim/auv_simulator/syrena_teleop/CMakeFiles/syrena_joy.dir/src/syrena_joy.cpp.o: /opt/ros/kinetic/include/ros/subscription_callback_helper.h

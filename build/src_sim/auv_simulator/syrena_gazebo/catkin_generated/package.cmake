@@ -10,4 +10,7 @@ set(syrena_gazebo_EXEC_DEPENDS "roscpp" "sensor_msgs" "nav_msgs" "robot_localiza
 set(syrena_gazebo_RUN_DEPENDS "roscpp" "sensor_msgs" "nav_msgs" "robot_localization" "freefloating_gazebo" "syrena_gazebo_worlds" "syrena_control" "move_base")
 set(syrena_gazebo_TEST_DEPENDS )
 set(syrena_gazebo_DOC_DEPENDS )
+set(syrena_gazebo_URL_WEBSITE "")
+set(syrena_gazebo_URL_BUGTRACKER "")
+set(syrena_gazebo_URL_REPOSITORY "")
 set(syrena_gazebo_DEPRECATED "")

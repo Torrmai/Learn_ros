@@ -1,0 +1,8 @@
+prefix=/home/ton/catkin_ws/install
+
+Name: find_path
+Description: Description of find_path
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ton/catkin_ws/install/lib 
+Requires: 

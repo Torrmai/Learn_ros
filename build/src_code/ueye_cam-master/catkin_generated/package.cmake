@@ -10,4 +10,7 @@ set(ueye_cam_EXEC_DEPENDS "roscpp" "nodelet" "dynamic_reconfigure" "image_transp
 set(ueye_cam_RUN_DEPENDS "roscpp" "nodelet" "dynamic_reconfigure" "image_transport" "sensor_msgs" "camera_calibration_parsers" "camera_info_manager")
 set(ueye_cam_TEST_DEPENDS )
 set(ueye_cam_DOC_DEPENDS )
+set(ueye_cam_URL_WEBSITE "")
+set(ueye_cam_URL_BUGTRACKER "")
+set(ueye_cam_URL_REPOSITORY "")
 set(ueye_cam_DEPRECATED "")
