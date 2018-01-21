@@ -26,7 +26,19 @@ def craete_empty_list():
     mask_list = [None]*len(color)
 
 def send_location():
-    pass
+    global cnts
+    for i in mask_list:
+        ret,th = cv2.threshold(i,127,255,0)
+        im2,cnts[i],hi =cv2.findContours(th,1,2)
+        for j in cnts[i]:
+            center , (width, height), angle = cv2.minAreaRect(i)
+            area = width * height
+            x,y = center
+            if area > 5000:
+                right_top_corner = (x+width/2,y+height/2)
+                right_bottom_corner =(x+width/2,y-height/2)
+                left_bottom_corner = (x-width/2,y-height/2)
+                left_top_corner = (x-width/2,y+height/2)
 
 def get_color():
     global lower,upper
@@ -59,3 +71,4 @@ if __name__ == '__main__':
         if img is None:
             continue
         showmask()
+        send_location()
