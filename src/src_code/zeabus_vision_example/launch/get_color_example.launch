@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+	<rosparam ns="color_range" command="load" file="$(find zeabus_example)/params/color_example.yaml"></rosparam>
+	<node pkg="zeabus_example" name="color_range_example" type="color_range_example.py" output="screen">
+		<!-- <param name="cameraTopic" type='str' value='/syrena/bottom_cam/image_raw/compressed'/> -->
+		  <param name="cameraTopic" type='str' value='/syrena/bottom_cam/image_raw/compressed'/>  
+		 <!-- <param name="cameraTopic" type='str' value='/top/center/image_rect_color/compressed'/>  -->
+
+	</node>
+</launch>

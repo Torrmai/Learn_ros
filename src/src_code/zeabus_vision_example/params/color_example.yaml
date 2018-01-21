@@ -1,0 +1,21 @@
+ color_example:
+  upper_orange: '64,255,195'
+
+  lower_orange: '9,38,20'
+
+  upper_red: '104,213,97'
+
+  lower_red: '98,132,70'
+
+  upper_yellow: '82,241,225'
+
+  lower_yellow: '50,185,36'
+
+  upper_green: '101,198,175'
+
+  lower_green: '44,112,13'
+
+  upper_black: '0,0,0'
+
+  lower_black: '179,255,255'
+
