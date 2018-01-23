@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 import rospy
 from sensor_msgs.msg import CompressedImage, Image
+from zeabus_example.msg import vision_gate
+# from sim
 color = [];lower = [];upper = []
 img = None
 area_top = 0
@@ -19,7 +21,13 @@ class  calculate:
         str = str.split(',')
         return np.array([int(str[0]), int(str[1]), int(str[2])], np.uint8)
     def check_gate(self):
-        pass
+        if area_top == 0:
+            print('not found')
+        elif self.area_each_pole[0] == None or self.area_each_pole[1] == None:
+            print('not found')
+        else:
+            print('found')
+            self.have = True
     def make_mask(self,tmp):
         for i in range(len(color)):
             cv2.imshow('original',img)
@@ -53,6 +61,18 @@ class  calculate:
                     if 5000 < area < 10000 and (31.5<=(width/height<=38.5):
                         area_top = area
         self.check_gate()
+    def send_msg(self):
+        sned_val = vission_gate()
+        for i in range(len(color)):
+            sned_val.check = self.have
+            sned_val.area = area_each_pole[i]
+            sned_val.color = color[i]
+            sned_val.pos_mid_top = 0
+            if color[i] == 'black':
+                sned_val.check = self.have
+                sned_val.area = area_top
+                sned_val.color = color[i]
+                sned_val.pos_mid_top = self.x_top
 def image_callback(msg):
     global img, image_w, image_h,hsv
     arr = np.fromstring(msg.data, np.uint8)
