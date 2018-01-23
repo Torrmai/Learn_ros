@@ -7,16 +7,20 @@ img = None
 class  calculate:
     """docstring for  calculate."""
     def __init__(self):
-        self.have =  True
+        self.have =  False
         self.mask_list = []*len(color)
     def range_str2list(self):
         str = str.split(',')
         return np.array([int(str[0]), int(str[1]), int(str[2])], np.uint8)
     def check_gate(self):
+        count = 0
         for i in self.mask_list:
-            if np.count_nonzero(i)<100:
-                self.have = False
-                break
+            if np.count_nonzero(i)>100:
+                count += 1
+        if count == 3:
+            self.have = True
+        else:
+            self.have = False
         return self.have
     def make_mask(self,tmp):
         for i in range(len(color)):
@@ -26,6 +30,7 @@ class  calculate:
             cv2.imshow(color[i],mask)
             cv2.waitKey(1)
         self.check_gate()
+        print(self.have)
     def get_color(self):
         global lower,upper
         for i in color:
@@ -40,7 +45,13 @@ class  calculate:
             for j in cnts[i]:
                 center , (width, height), angle = cv2.minAreaRect(j)
                 area = width * height
-                print(color[i]+': '+str(area))
+                x, y = center
+                if area > 300 :
+                    print(color[i]+': '+str(area))
+                    print(color[i]+': '+str(x)+', '+str(y))
+                else :
+                    continue
+
 
 def image_callback(msg):
     global img, image_w, image_h,hsv

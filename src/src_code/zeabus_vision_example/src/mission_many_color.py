@@ -16,7 +16,7 @@ area_each_pole = []
 img = None;hsv = None
 task = ''
 def image_callback(msg):
-    global img, mage_w, image_h,hsv
+    global img, image_w, image_h,hsv
     arr = np.fromstring(msg.data, np.uint8)
     img = cv2.resize(cv2.imdecode(arr, 1), (image_w, image_h))
     hsv = cv2.cvtColor(img.copy(),cv2.COLOR_BGR2HSV)
@@ -39,7 +39,7 @@ def compare_size(a1,a2):
 
 def send_location():
     global cnts
-    old_area = 0;
+    old_area = 0
     for i in range(len(mask_list)):
         ret,th = cv2.threshold(mask_list[i],127,255,0)
         im2,cnts[i],hi =cv2.findContours(th,1,2)
