@@ -4,24 +4,22 @@ import rospy
 from sensor_msgs.msg import CompressedImage, Image
 color = [];lower = [];upper = []
 img = None
+area_top = 0
 class  calculate:
     """docstring for  calculate."""
     def __init__(self):
         self.have =  False
-        self.mask_list = []*len(color)
+        self.mask_list = [None]*len(color)
+        self.area_each_pole = [None]*(len(color)-1)
+        self.cnts =[None]*len(color)
+        self.get_color()
+        self.make_mask()
+        self.find_area()
     def range_str2list(self):
         str = str.split(',')
         return np.array([int(str[0]), int(str[1]), int(str[2])], np.uint8)
     def check_gate(self):
-        count = 0
-        for i in self.mask_list:
-            if np.count_nonzero(i)>100:
-                count += 1
-        if count == 3:
-            self.have = True
-        else:
-            self.have = False
-        return self.have
+        pass
     def make_mask(self,tmp):
         for i in range(len(color)):
             cv2.imshow('original',img)
@@ -39,20 +37,22 @@ class  calculate:
             upper.append(tmp_upper);lower.append(tmp_lower)
         self.make_mask()
     def find_area(self):
+        global  area_top
         for i in range(len(color))):
             ret,th = cv2.threshold(mask_list[i],127,255,0)
-            im2,cnts[i],hi =cv2.findContours(th,1,2)
-            for j in cnts[i]:
+            im2,self.cnts[i],hi =cv2.findContours(th,1,2)
+            tmp = []
+            for j in self.cnts[i]:
                 center , (width, height), angle = cv2.minAreaRect(j)
                 area = width * height
                 x, y = center
-                if area > 300 :
-                    print(color[i]+': '+str(area))
-                    print(color[i]+': '+str(x)+', '+str(y))
-                else :
-                    continue
-
-
+                if color[i] == 'orange' or color[i] == 'green':
+                    if 5000 < area < 10000 and (31.5<=(hieght/width)<=38.5):
+                        area_each_pole[i] = area
+                else:
+                    if 5000 < area < 10000 and (31.5<=(width/height<=38.5):
+                        area_top = area
+        self.check_gate()
 def image_callback(msg):
     global img, image_w, image_h,hsv
     arr = np.fromstring(msg.data, np.uint8)
