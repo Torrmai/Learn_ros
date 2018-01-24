@@ -6,7 +6,7 @@ from zeabus_example.msg import vision_gate
 # from sim
 color = [];lower = [];upper = []
 img = None
-area_top = 0
+area_top = 0;center_top = 0
 class  calculate:
     """docstring for  calculate."""
     def __init__(self):
@@ -28,6 +28,7 @@ class  calculate:
         else:
             print('found')
             self.have = True
+        self.send_msg()
     def make_mask(self,tmp):
         for i in range(len(color)):
             cv2.imshow('original',img)
@@ -45,7 +46,7 @@ class  calculate:
             upper.append(tmp_upper);lower.append(tmp_lower)
         self.make_mask()
     def find_area(self):
-        global  area_top
+        global  area_top;center_top
         for i in range(len(color))):
             ret,th = cv2.threshold(mask_list[i],127,255,0)
             im2,self.cnts[i],hi =cv2.findContours(th,1,2)
@@ -60,6 +61,7 @@ class  calculate:
                 else:
                     if 5000 < area < 10000 and (31.5<=(width/height<=38.5):
                         area_top = area
+                        center_top = x
         self.check_gate()
     def send_msg(self):
         sned_val = vission_gate()
@@ -67,12 +69,12 @@ class  calculate:
             sned_val.check = self.have
             sned_val.area = area_each_pole[i]
             sned_val.color = color[i]
-            sned_val.pos_mid_top = 0
+            sned_val.pos_mid_top = -6969696969696969
             if color[i] == 'black':
                 sned_val.check = self.have
                 sned_val.area = area_top
                 sned_val.color = color[i]
-                sned_val.pos_mid_top = self.x_top
+                sned_val.pos_mid_top = center_top
 def image_callback(msg):
     global img, image_w, image_h,hsv
     arr = np.fromstring(msg.data, np.uint8)
