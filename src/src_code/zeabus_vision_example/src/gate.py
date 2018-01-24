@@ -8,6 +8,7 @@ from zeabus_example.msg import vision_gate
 color = [];lower = [];upper = []
 img = None
 area_top = 0;center_top = 0
+img_w = 320;img_h = 240
 class  calculate:
     """docstring for  calculate."""
     def __init__(self):
@@ -60,7 +61,7 @@ class  calculate:
                     if area > 5000 and (31.5<=(hieght/width)<=38.5):
                         area_each_pole[i] = area
                 else:
-                    if area > 5000 and (31.5<=(width/height<=38.5):
+                    if area > 5000 and (31.5<=(width/height)<=38.5):
                         area_top = area
                         center_top = x
         self.check_gate()
