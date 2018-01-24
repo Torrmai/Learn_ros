@@ -1,7 +1,4 @@
-Bool check
-
+bool check
 float64 area
-
-String color
-
+string color
 float64 pos_mid_top

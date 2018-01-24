@@ -8,12 +8,12 @@ project(zeabus_example)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  std_msgs
   geometry_msgs
-  message_generation
   roscpp
   rospy
   sensor_msgs
-  std_msgs
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -53,7 +53,6 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
    FILES
    vission_gate.msg
-
 )
 
 ## Generate services in the 'srv' folder
@@ -72,9 +71,8 @@ add_message_files(
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
-   DEPENDENCIES
-#   geometry_msgs#   sensor_msgs#   std_msgs
-   zeabus_vission_example
+   DEPENDENCIES   
+   std_msgs
 )
 
 ################################################
@@ -109,7 +107,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES zeabus_example
-#  CATKIN_DEPENDS geometry_msgs message_generation roscpp rospy sensor_msgs std_msgs
+  CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs message_runtime
 #  DEPENDS system_lib
 )
 

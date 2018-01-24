@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import cv2
 import numpy as np
 import rospy
@@ -56,10 +57,10 @@ class  calculate:
                 area = width * height
                 x, y = center
                 if color[i] == 'orange' or color[i] == 'green':
-                    if 5000 < area < 10000 and (31.5<=(hieght/width)<=38.5):
+                    if area > 5000 and (31.5<=(hieght/width)<=38.5):
                         area_each_pole[i] = area
                 else:
-                    if 5000 < area < 10000 and (31.5<=(width/height<=38.5):
+                    if area > 5000 and (31.5<=(width/height<=38.5):
                         area_top = area
                         center_top = x
         self.check_gate()
