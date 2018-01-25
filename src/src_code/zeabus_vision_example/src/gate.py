@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import rospy
 from sensor_msgs.msg import CompressedImage, Image
-from zeabus_example.msg import vision_gate
+from zeabus_example.msg import vission_gate
 # from sim
 color = [];lower = [];upper = []
 img = None
